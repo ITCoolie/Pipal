@@ -353,6 +353,15 @@ function twentyfifteen_post_nav_background() {
 add_action( 'wp_enqueue_scripts', 'twentyfifteen_post_nav_background' );
 
 /**
+ * Popup a chat frame.
+ */
+
+function popup_chat_frame_scripts() {
+	echo "<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>";
+}
+add_action( 'wp_enqueue_scripts', 'popup_chat_frame_scripts' );
+
+/**
  * Display descriptions in main navigation.
  *
  * @since Twenty Fifteen 1.0
@@ -405,3 +414,5 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+
+

