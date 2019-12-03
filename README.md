@@ -1,2 +1,2 @@
 # Pipal
-在线客服系统
+Open Source Artificial Intelligence Customer Service
