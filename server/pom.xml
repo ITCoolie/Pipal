@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.pipal</groupId>
-	<artifactId>pipal.service</artifactId>
+	<artifactId>server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>pipal-service</name>
-	<description>Pipal service project</description>
+	<name>server</name>
+	<description>Pipal chat server project</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -123,6 +123,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<skipTests>true</skipTests>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>

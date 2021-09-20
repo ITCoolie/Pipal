@@ -1,10 +1,10 @@
 app:
-  id: pipal-service
+  id: pipal-server
 spring:
   profiles:
     active: online
   application:
-    name: pipal-service
+    name: pipal-server
   jpa:
     hibernate:
       ddl-auto: update
