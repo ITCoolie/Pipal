@@ -1,0 +1,30 @@
+app:
+  id: pipal-service
+spring:
+  profiles:
+    active: online
+  application:
+    name: pipal-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db_pipal
+    username: pipal
+    password:
+  data:
+    redis:
+      repositories:
+        enable: false
+    elasticsearch:
+      repositories:
+        enable: false
+  elasticsearch:
+    rest:
+      uris: http://127.0.0.1:9200
+      username:
+      password:
+      connection-timeout: 5000
+      read-timeout: 5000
+config:
