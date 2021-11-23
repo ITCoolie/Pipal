@@ -1,6 +1,7 @@
 package com.pipal.server;
 
 import com.pipal.server.bi.AccountMapper;
+import com.pipal.server.configure.Config;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import org.apache.ibatis.mapping.Environment;

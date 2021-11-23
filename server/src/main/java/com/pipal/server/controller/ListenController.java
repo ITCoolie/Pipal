@@ -6,17 +6,19 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
+/**listen controller class
+ * */
 @Slf4j
 @RestController
-@RequestMapping(path="/api")
-public class MainController {
+@RequestMapping(path="/api/listen/v1")
+public class ListenController {
 
     @Resource
     private Config config;
 
-    @RequestMapping(path = "/test", method = {RequestMethod.POST})
-    public String test(@RequestParam String token, @RequestBody String data) {
+    @RequestMapping(path = "/event", method = {RequestMethod.POST})
+    public String event(@RequestParam String token, @RequestBody String data) {
 
-        return "test";
+        return "ok";
     }
 }

@@ -20,11 +20,6 @@ spring:
     elasticsearch:
       repositories:
         enable: false
-  elasticsearch:
-    rest:
-      uris: http://127.0.0.1:9200
-      username:
-      password:
-      connection-timeout: 5000
-      read-timeout: 5000
-config:
+service:
+  config:
+    token: a441f74b523c41e197340c6277c0123f

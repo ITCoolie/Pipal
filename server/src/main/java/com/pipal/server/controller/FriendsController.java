@@ -8,15 +8,15 @@ import javax.annotation.Resource;
 
 @Slf4j
 @RestController
-@RequestMapping(path="/api")
-public class MainController {
+@RequestMapping(path="/api/friends/v1")
+public class FriendsController {
 
     @Resource
     private Config config;
 
-    @RequestMapping(path = "/test", method = {RequestMethod.POST})
-    public String test(@RequestParam String token, @RequestBody String data) {
+    @RequestMapping(path = "/get_friends", method = {RequestMethod.POST})
+    public String getFriends(@RequestParam String token, @RequestBody String data) {
 
-        return "test";
+        return "ok";
     }
 }
